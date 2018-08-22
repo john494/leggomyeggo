@@ -4,26 +4,27 @@ task main()
 	moveFwd(tTurnTime);
 	rightTurn(tTurnTime);
 	leftTurn(tTurnTime);
+	turnAround(tTurnTime);
 }
 
 
 void moveFwd(int aTimeVal)
 {
-	setSpeeds(100, 100);
+	setSpeeds(25, 25);
 	sleep(aTimeVal);
 	setSpeeds(0,0);
 }
 
 void rightTurn(int aTimeVal)
 {
-	setSpeeds(100, -100);
+	setSpeeds(25, -25);
 	sleep(aTimeVal)
 	setSpeeds(0,0);
 }
 
 void leftTurn(int aTimeval)
 {
-	setSpeeds(-100,100);
+	setSpeeds(-25,25);
 	sleep(aTimeval);
 	setSpeeds(0,0);
 }
